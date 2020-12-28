@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图云 - 新用户注册</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="./libs/popoload.min.js"></script>
+    <script>
+        window.SIGNTYPE = 'register';PL({libs:['./js/sign.js?' + new Date().getTime()]});
+    </script>
+</head>
+<body>
+    <div class='main free-width' style="display:none">
+        <header class='free-width at-header'>
+            <div class='row container pd0'>
+                <div class="column three pd0">
+                    <h1>地图云</h1>
+                </div>
+                <div class="column four pd0">
+                    <h2 style="color:transparent;">s</h2>
+                </div>
+                <div class="column five pd0 text-right at-link">
+                    <a href="./index.html">首页</a>
+                    <a href="http://www.atlasdata.cn">关于舆图</a>
+                </div>
+            </div>
+        </header>
+        <main class="free-width pt-6">
+            <div class="row container at-main">
+                <div class="column four pd0">
+                    <div class="pd-5">
+                            <ul class="at-features">
+                                <li class="mgb-2 clearfix">
+                                    <div><i class="iconfont">&#xe64c;</i></div>
+                                    <div>
+                                        <h6>地图数据存储空间</h6>
+                                        <p>上传与管理不同类型的矢量、影像数据</p>
+                                    </div>
+                                </li>
+                                <li class="mgb-2 clearfix">
+                                    <div><i class="iconfont">&#xe634;</i></div>
+                                    <div>
+                                        <h6>多种不同风格的公共底图</h6>
+                                        <p>自由定制与修改地图样式</p>
+                                    </div>
+                                </li>
+                                <li class="mgb-2 clearfix">
+                                    <div><i class="iconfont">&#xe646;</i></div>
+                                    <div>
+                                        <h6>丰富的地图配置选项</h6>
+                                        <p>易操作的交互式UI</p>
+                                        <p>从简单到复杂的地图样式，只有想不到，没有办不到</p>
+                                    </div>
+                                </li>
+                                <li class="mgb-2 clearfix">
+                                    <div><i class="iconfont">&#xe621;</i></div>
+                                    <div>
+                                        <h6>快速发布与分享</h6>
+                                        <p>最快仅需两步，即可发布与分享地图</p>
+                                    </div>
+                                </li>
+                                <li class="mgb-2 clearfix">
+                                    <div><i class="iconfont">&#xe6fb;</i></div>
+                                    <div>
+                                        <h6>酷炫的应用与可视化</h6>
+                                        <p>全球最新的可视化技术</p>
+                                        <p>可定制各类应用模板</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="column eight pd0">
+                    <div class="pd-4">
+                        <h2 class="mgb-4">新用户注册</h2>
+                        <form action="javascript:;" method="get" id="form">
+                        <div class="at-input-group mgb-2">
+                            <div>用户名</div>
+                            <div class="clearfix"><input autocomplete="off" type="text" name="account" placeholder="请输入用户名, 长度 5 ~ 20" id="account"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="at-input-group mgb-2">
+                            <div>Email 邮箱</div>
+                            <div class="clearfix"><input autocomplete="off" type="text" name="email" placeholder="请输入Email" id="email"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="at-input-group mgb-2">
+                            <div>密码</div>
+                            <div class="clearfix"><input autocomplete="off" type="password" name="pwd" placeholder="请输入密码，长度 4 ~ 20" id="pwd"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="at-input-group mgb-2">
+                            <div>确认密码</div>
+                            <div class="clearfix"><input autocomplete="off" type="password" name="repeatpwd" placeholder="请再次输入密码" id="repeatpwd"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="row pd-0 mgb-1">
+                            <div class="column six text-overflow">
+                                注册即代表您已阅读并同意 <a href="./tos.html" target="_blank">服务条款</a>
+                            </div>
+                            <div class="column six text-right"></div>
+                        </div>
+                        <div class="row pd-0 mgb-1">
+                            <div class="column six at-alarm text-overflow" id="at-res-error">
+                                
+                            </div>
+                            <div class="column six text-right"></div>
+                        </div>
+                        <div class="mgb-2">
+                            <button class="at-sumbit" type="submit">注册</button>
+                        </div>
+                        </form>
+                        <div class="text-right">
+                            已有帐号，<a href="./login.html">登录 <i class="iconfont">&#xe9bc;</i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center pt-5">
+            舆图数据 AtlasData.cn 版权所有&copy;2017-2019
+        </footer>
+    </div>
+</body>
+</html>

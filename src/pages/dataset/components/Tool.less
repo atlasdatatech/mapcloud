@@ -1,0 +1,24 @@
+@toolPaneSize: 36px;
+
+.tool {
+    width: @toolPaneSize;
+
+    li {
+        margin-bottom: 10px;
+        height: @toolPaneSize;
+        background-color:#fff;
+        line-height: @toolPaneSize;
+        text-align: center;
+        border-radius: 2px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+        cursor: pointer;
+
+        &:hover{
+            i {font-weight: 600;}
+        }
+
+        &.acitve{
+            background-color: rgba(198, 201, 236, 0.15);
+        }
+    }
+}

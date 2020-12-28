@@ -1,0 +1,108 @@
+.scroll {
+    max-height: 100%;
+}
+
+.title {
+    height: 40px;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+
+    > div:first-child {
+        >div:first-child {
+            width: 40px;
+            text-align: center;
+        }
+        >div:last-child{
+            width: calc(100% - 40px);
+        }
+    }
+
+}
+
+.tabs {
+    height: calc(100% - 40px);
+    >div{float: left;}
+    >div:first-child {
+        width: 40px;
+        height:100%;
+        text-align: center;
+        // background-color:#4B4B4B;
+        color:#555;
+        border-right: 1px solid #ddd;
+    }
+    >div:last-child {
+        width: calc(100% - 40px);
+        height:100%;
+    }
+}
+
+.tabNav {
+    padding-top: 20px;
+    ul li {
+        height:40px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        &:hover {
+            color:#106BA3;
+        }
+    }
+}
+
+.active {
+    color:#106BA3!important; 
+}
+
+.tabContent {
+    height: calc(100% - 54px);
+    div[class*=inner-content] {
+        width:calc(100% - 20px);
+        margin: 0 auto;
+    }
+}
+
+.tabContentNoFilter {
+    height: 100%;
+}
+
+.filterSearch {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+}
+
+.optionsMain {
+
+    >div:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    [class*=bp3-label],[class*=bp3-control] { margin-bottom:0;}
+}
+
+
+.translateInput {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+        display: inline-flex;
+        margin: 0 10px;
+    }
+}
+
+.fieldWrapper {
+    height: 300px;
+    width: 380px;
+    padding: 10px 5px;
+}
+
+
+
+.blankCreate {
+    padding: 20px;
+    >div:first-child {
+        transform: scale(0.8);
+        margin-bottom: 0!important;
+    }
+    font-size: 14px!important;
+}
+

@@ -1,0 +1,29 @@
+.container {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 10px;
+}
+.collapse {
+    >div:first-child {
+        height: 30px;
+        line-height: 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        > div {
+            height: 100%;
+            button {padding: 0 4px;}
+        }
+        > div:first-child {
+            width: calc(100% - 90px);
+        }
+        h6 {
+            width: calc(100% - 20px);
+            i {
+                font-weight: normal;
+            }
+        }
+    }
+}

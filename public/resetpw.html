@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图云 - 密码重置</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="./libs/popoload.min.js"></script>
+    <script>
+        window.SIGNTYPE = 'resetpw';PL({libs:['./js/sign.js?' + new Date().getTime()]});
+    </script>
+</head>
+<body>
+    <div class='main free-width' style="display:none">
+        <header class='free-width at-header'>
+            <div class='row container pd0'>
+                <div class="column three pd0">
+                    <h1>地图云</h1>
+                </div>
+                <div class="column four pd0">
+                    <h2 style="color:transparent;">s</h2>
+                </div>
+                <div class="column five pd0 text-right at-link">
+                    <a href="./index.html">首页</a>
+                    <a href="http://www.atlasdata.cn">关于舆图</a>
+                </div>
+            </div>
+        </header>
+        <main class="free-width pt-6">
+            <div class="row container at-main">
+                <div class="pd0">
+                    <div class="pd-4">
+                        <h2 class="mgb-4">密码重置</h2>
+                        <form action="javascript:;" method="get" id="form">
+                        <div class="at-input-group mgb-2">
+                            <div>密码</div>
+                            <div class="clearfix"><input autocomplete="off" type="password" name="pwd" placeholder="请输入密码，长度 4 ~ 20" id="pwd"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="at-input-group mgb-2">
+                            <div>确认密码</div>
+                            <div class="clearfix"><input autocomplete="off" type="password" name="repeatpwd" placeholder="请再次输入密码" id="repeatpwd"></div>
+                            <div class="at-alarm"></div>
+                        </div>
+                        <div class="row pd-0 mgb-1">
+                            <div class="column six at-alarm text-overflow" id="at-res-error">
+                                
+                            </div>
+                            <div class="column six text-right"></div>
+                        </div>
+                        <div class="mgb-2" id="at-info">
+                            <button class="at-sumbit" type="submit">确认重置</button>
+                        </div>
+                        <div class="text-right">
+                                记得密码，直接 <a href="./login.html">登录 <i class="iconfont">&#xe9bc;</i></a> 
+                        </div>
+                        </form>
+                        <div class="at-note pd-1">
+                            温馨提示：地图云提供的所有在线服务仅用于用户体验，不得用于商业用途，凡因商业用途导致的纠纷与法务事宜，地图云概不负责。<a href="./tos.html" target="_blank">阅读服务协议</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center pt-5">
+            舆图数据 AtlasData.cn 版权所有&copy;2017-2019
+        </footer>
+    </div>
+</body>
+</html>

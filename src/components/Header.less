@@ -1,0 +1,67 @@
+@headerHeight: 80px;
+@userLogoSize: 40px;
+
+.nav {
+    overflow: hidden;
+    line-height: @headerHeight;
+    text-align: right;
+    a {
+        font-weight: 600;
+        padding: 0 20px;
+        // font-size: 16px;
+        display: inline-block;
+        height:100%;
+        border-bottom: 3px solid transparent;
+        text-align: center;
+        margin: 0 10px;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.logo {
+    overflow: hidden;
+    text-align: left;
+    h1 {width:240px;height:100%;transform: scale(0.8) translateX(-10%);}
+}
+
+.userMenu {
+    text-align: right;
+    position: relative;
+    cursor: pointer;
+}
+.arrow {
+    position: absolute;
+    top: calc(@headerHeight - 40px - 6px);
+    right: 2px;   
+}
+.userLogo {
+    display: inline-block;
+    width: @userLogoSize;
+    height: @userLogoSize;
+    line-height: @userLogoSize * 1.2;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-top: (@headerHeight - @userLogoSize) / 2;
+    margin-right: 26px;
+
+    i {
+        font-size: @userLogoSize;
+        margin-right:0;
+        font-weight: 500;
+    }
+}
+
+.userMenuList {
+
+    width: @headerHeight * 2.5;
+    
+    ul li {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+}
+

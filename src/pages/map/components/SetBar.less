@@ -1,0 +1,53 @@
+@ItemSize: 50px;
+
+.container {
+    position: relative;
+    
+
+    >div:first-child {
+        width: 100%;
+        height: 70px;
+    }
+
+    >div[class*=active] {
+        color:#fff!important;
+    }
+
+}
+
+.btn{
+    border-radius: 3px;
+    width: @ItemSize;
+    height: @ItemSize;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+   
+}
+
+.logo {
+    display: block;
+    height: @ItemSize - 10px;
+    width: @ItemSize - 10px;
+    background-size: 100% auto;
+}
+
+.bottom {
+    width: @ItemSize;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+}
+
+.divider {
+    border-bottom-color: rgba(255,255,255,.25);
+}
+
+@media screen and (max-height: 700px){
+    .btn {
+        width: @ItemSize * .75;
+        height: @ItemSize * .75;
+    }
+}

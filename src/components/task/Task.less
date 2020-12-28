@@ -1,0 +1,66 @@
+.main {
+    width: 500px;
+    min-height: 50px;
+}
+.card {
+    padding: 0px;
+    overflow: hidden;
+    // background-color:#F3F8FC;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    line-height: 45px;
+    background-color:#fff;
+
+    > div:first-child {
+        padding: 0 10px;
+        p {margin-left: 10px;font-size: 1rem;}
+    }
+
+    > div:last-child {
+        padding-right: 10px;
+        button {
+            margin-left: 10px;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background-color:#D2E5F2;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    
+    > div:last-child{
+        width: calc(100% - 30px);
+        span {padding: 0 5px;}
+    }
+    
+    > div:first-child {
+        width: 30px;
+    }
+}
+
+
+.list {
+    height: 300px;
+    transition: height .4s ease-out;
+}
+.listShow {
+    height: 300px;
+}
+.listHidden {
+    height: 0;
+}
+.scroll {
+    max-height: 100%;
+}
+.scrollContent {
+    // height: 800px;
+    padding: 0 0px 0 0;
+}

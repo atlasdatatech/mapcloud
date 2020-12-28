@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <button onclick="getMaps()">getMaps</button>
+    <div class="info"></div>
+    <script>
+        var host = 'http://api.atlasdata.cn/';
+        var token = "eyJpZCI6InNodW4ifQ.69ncA--qjdXrEXxMF3WDBlCKfLv_OigFLS27a2ATE_A";
+        $.ajax({
+            method: 'GET',
+            url: host + 'maps/?public=true',
+            contentType: 'application/json;language=utf-8',
+            xhrFields: {
+                withCredentials: true,
+            },
+            headers: {
+                Authorization: 'Bearer ' + token
+            },
+            success: function(res) {
+                console.log(res)
+            }
+        });
+
+
+    </script>
+</body>
+</html>

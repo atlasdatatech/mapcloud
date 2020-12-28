@@ -1,0 +1,41 @@
+.item {
+    >* {
+        padding: 3px 20px;
+    }
+
+    >div:first-child{
+        height: 100px;
+        text-align: center;
+        padding:0;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+
+    
+}
+.emptyImage {
+    height: 100%!important;
+    width: auto!important;
+}
+.time {
+    > div:first-child {margin-right:5px;}
+    > div:last-child {
+        width: calc(100% - 30px);
+        font-size: 12px;
+    }
+}
+
+.operators{
+    justify-content:space-between;
+}
+
+.link {
+    > span, > span > a {display: block;width:100%;height:100%;text-align: center;}
+
+}

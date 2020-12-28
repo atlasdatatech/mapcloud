@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>地图云 - 地图浏览</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <script src="./libs/popoload.min.js"></script>
+    <style>
+    html,body{height:100%;margin:0 auto;padding:0;overflow:hidden;background-color:#f2f2f2;}
+    #map{width:100%;height:100%;}
+    </style>
+    <script>
+       PL({libs:['./js/view.js?' + new Date().getTime()]});
+    </script>
+</head>
+<body>
+    <div class="h100">
+        <div id="map"></div>
+    </div>
+    <div id="nav">
+        <a href="http://www.atlasdata.cn"><div class="logo animated infinite bounce delay-2s"></div></a>
+        <p class="text-center">应用加载中... <span id="timeTotal"></span> 请稍候，马上就好</p>
+        <h1></h1>
+        <div class="link"><a href="http://www.atlasdata.cn">舆图数据&copy; www.atlasdata.cn</a></div>
+    </div>
+</body>
+</html>

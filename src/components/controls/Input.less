@@ -1,0 +1,33 @@
+.etditable {
+    height: 30px;
+    >div{
+        height: inherit;
+    }
+    >div:first-child {
+        width: calc(100% - 40px);
+    }
+    >div:last-child {
+        width: 30px;
+        margin-left: 10px;
+        line-height: 30px;
+    }
+    &:hover {
+        .autoHide  {
+            display: inline-flex;
+        }
+    }
+    input[type=text] {font-size: inherit;font-weight: inherit;width:100%;}
+}
+.disableEdit {
+    border:none!important;
+    background-color:transparent!important;
+    cursor: pointer;
+}
+
+.showBtn {
+    display: inline-flex;
+}
+
+.autoHide {
+    display: none;
+}

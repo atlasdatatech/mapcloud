@@ -1,0 +1,33 @@
+{
+    "groups": {
+        "roads": {
+            "show": true,
+            "forceColor": false
+        },
+        "water": {
+            "show": true,
+            "forceColor": false
+        },
+        "nature": {
+            "show": true,
+            "forceColor": false
+        },
+        "glaciers": {
+            "show": true
+        },
+        "landscape": {
+            "show": true,
+            "forceColor": false
+        },
+        "placenames": {
+            "show": true,
+            "forceColor": false
+        },
+        "administrative": {
+            "show": true,
+            "forceColor": false
+        }
+    },
+    "language": {},
+    "remove3d": true
+}

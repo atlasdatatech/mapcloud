@@ -1,0 +1,146 @@
+@widerWidth: 800px;
+@normalWidth: 500px;
+@selectedWidth: 280px;
+
+.main {
+    width: @normalWidth;
+    height: 500px;
+}
+
+// 多选模式
+.mainWider {
+    width: @widerWidth
+}
+
+// 多选模式
+.contentWider {
+    display: flex;
+}
+
+// 多选模式 - 选择区域
+.selectionContainer {
+    width: @widerWidth - @selectedWidth - 20px;
+    
+}
+
+// 多选模式 - 已选择区域
+.selectedContainer {
+    width: @selectedWidth;
+    border-left: 1px solid #ddd;
+    height: calc(100% - 40px);
+    margin-top: 20px;
+    padding-left: 20px;
+    >div:first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// 多选模式 - 已选择区域滚动条
+.selectedScroll {
+    max-height: calc(100% - 35px);
+}
+
+.content {
+    height: calc(100% - 75px);
+}
+
+.tabs {
+    height: 100%;
+    padding: 20px;
+    >div:first-child {
+        width: 140px;
+        div {
+            border-radius: 0!important;
+        }
+        span {font-size: 14px;}
+    }
+    >div:not(:first-child) {
+        margin-top: 10px;
+        width: calc(100% - 140px);
+        border-left: 1px solid #ddd;
+        height: 100%;
+    }
+}
+
+.unselectPanel {
+    position: relative;
+    
+    >div:first-child {
+        height: 40px;
+    }
+    >div:nth-child(2) {
+        height: calc(100% - 40px - 40px);
+        margin-bottom: 10px;
+    }
+    >div:last-child {
+        height: 30px;
+    }
+}
+
+.scroll {
+    max-height: 100%;
+    margin-right: -20px;
+}
+
+.scrollcontent {
+    padding: 0px 20px 0px 3px;
+
+    div[class*=container] {width:100%;}
+
+    > ul > li {
+        padding: 10px 0;
+        &:not(:last-child){
+            border-bottom: 1px solid #ccc;
+        }
+    }
+}
+
+.selectedItem{
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    > div:first-child {
+        display: flex;
+        width: calc(100% - 40px);
+        > div:first-child {
+            width: 30px;
+            margin-right: 10px;
+            line-height: 40px;
+            text-align: center;
+            
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        > div:last-child {
+            width: calc(100% - 50px);
+        }
+    }
+    > div:not(:first-child) {
+        line-height: 40px;
+        width: 40px;
+    }
+    > div {
+        height: 100%;
+    }
+    button {padding: 0 4px!important;}
+    h6 {margin-bottom: 5px;font-size: 14px;}
+}
+
+.dslist {
+    li { margin-bottom: 5px;padding: 5px 0 10px 0;}
+
+    >li:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.publicItem {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}

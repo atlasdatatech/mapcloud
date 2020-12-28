@@ -1,0 +1,33 @@
+.editTitle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &:hover {
+        > i[class*=iconfont] {
+            display: inline-block;
+        }
+    }
+
+    > input[type=text], > span {
+        width: 100%;
+    }
+
+    > input[type=text] {
+        box-shadow: 0 0 0 1px #005DEF;
+        border-radius: 3px;
+        padding: 2px;
+    }
+}
+
+.showBtn {
+    > i[class*=iconfont] {
+        position: absolute;
+        display: none;
+        right:0;
+    }
+
+    > input[type=text], > span {
+        width: calc(100% - 30px);
+    }
+}

@@ -1,0 +1,59 @@
+@fixedHeight: 200px;
+
+.main {
+
+    > div {
+        float: left;
+        height: 100%;
+        // border: 1px solid red;
+    }
+
+    > div:first-child {
+        width: 350px;
+    }
+
+    > div:last-child{
+        width: calc(100% - 350px);
+        padding: 10px 0;
+    }
+}
+
+.card {
+    padding: 30px 0px 30px 30px;
+}
+
+.table {
+    width: 100%;
+    tr:nth-child(2n + 1) td{
+        font-weight: 600;
+    }
+
+    tr:nth-child(2n) td{
+        padding: 5px 0 15px 0;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
+
+.map {
+    // background-color:#555;
+    background-color:#fff;
+}
+
+.scroll {
+    max-height: calc(100% - 100px);
+
+    > *{
+        padding-right: 30px;
+    }
+}
+
+.btns {
+    > span {
+        display: flex;
+
+        > div:last-child {
+            margin-left: 5px;
+        }
+    }
+}

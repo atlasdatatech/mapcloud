@@ -1,0 +1,87 @@
+@searchHeight: 36px;
+
+.searchWrap{
+    height: @searchHeight;
+    line-height: @searchHeight;
+    width: 280px;
+    position: relative;
+    border-radius: 4px;
+    top: 10px;
+    right: 10px;
+    box-shadow: 1px 1px 0 1px rgba(0,0,0,.15);
+    
+
+    input[type="text"] {
+        height: 100%;
+        width: 100%;
+        border:none;
+        padding: 0 90px 0 8px;
+        font-size: 14px;
+        border-radius: 3px;
+        outline: none;
+        color: #000;
+    }
+
+    button {
+        position: absolute;
+        border:0;
+        background-color: transparent;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        font-size: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .btnQuery {
+        top: 0;
+        right: 0px;
+        height: 100%;
+        width: 40px;
+        background-color:#3385FF;
+        color: white;
+        &:hover {
+            background-color:#2E77E5;
+        }
+    }
+
+    .btnRemove {
+        right: 40px;
+        height: calc(100% - 8px);
+        top: 4px;
+        width: 40px;
+        border-left: 1px solid #ddd;
+        color:#888;
+    }
+
+    .result {
+        min-height: 30px;
+        width: 100%;
+        background-color:#fff;
+        margin-top: 10px;
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,.15);
+        border-radius: 2px;
+        color:#333;
+
+        div {
+            line-height:150%;
+            padding: 10px;
+            color:#666;
+            font-size: 12px;
+        }
+
+        ul li {
+            height: 36px;
+            line-height: 36px;
+            cursor: pointer;
+            padding: 0 10px;
+
+            i{margin-right: 10px;}
+
+            &:hover{
+                background-color:rgba(0,0,0,.1);
+            }
+        }
+
+    }
+}

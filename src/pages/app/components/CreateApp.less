@@ -1,0 +1,79 @@
+@modalHeight: 560px;
+
+.modal {
+    width: 900px;
+    max-height: @modalHeight;
+}
+
+.wrapper {
+    height: calc(@modalHeight - 90px);
+    max-height: calc(@modalHeight - 90px);
+}
+
+.note {
+    margin-bottom: 15px;
+    text-indent: 2rem;
+}
+
+.content{
+    padding: 20px 10px 0px 20px;
+}
+
+// 历任高级市场经理、售前技术总监，有丰富的行业管理和业务拓展经验
+
+.list {
+    display:flex;
+    flex-wrap: wrap;
+    width: calc(100% - 10px);
+    padding: 10px 20px 0 10px;
+    li {
+        width: calc(33.3% - 10px);
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        // padding-bottom: 8px;
+        position: relative;
+
+        &:nth-child(3n) {
+            margin-right:0;
+        }
+    }
+}
+
+.item {
+
+    >* {
+        padding: 3px 20px;
+    }
+
+    >div:nth-child(1) {
+        height: 120px;
+        text-align: center;
+        padding:0;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    
+    img {
+        width: auto;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    
+
+    h5 {
+        position: relative;
+
+        button {
+            position: absolute;
+            right: 15px;
+            border-radius: 10px;
+            top: 0;
+        }
+    }
+}

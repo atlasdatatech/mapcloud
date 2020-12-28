@@ -1,0 +1,18 @@
+@sidewidth: 300px;
+@gutter: 60px;
+@minHeight: 300px;
+
+.main {
+    width: calc(100% - @sidewidth - @gutter);
+    float: left;
+    min-height: @minHeight;
+    // border: 1px solid rgba(0,0,0,.1);
+    margin-right: @gutter;
+}
+
+.side {
+    width: @sidewidth;
+    float: left;
+    border-radius: 2px;
+    min-height: @minHeight;
+}

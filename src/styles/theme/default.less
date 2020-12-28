@@ -1,0 +1,251 @@
+// @main_color: #4B8DE0;
+@main_color: #005DEF;
+
+body {
+    background-color:#F3F8FC;
+    color:#555;
+}
+
+.at-light-color {
+    color:#888;
+}
+
+.at-main-color {
+    color:@main_color;
+}
+
+.at-logo {
+    background: url('../../assets/logo_128.png') center top no-repeat;
+}
+
+.at-logo-white {
+    background-position-y:bottom;
+}
+
+
+.at-bg-default {
+    background-color: #fff;
+}
+
+.at-bg-light {
+    background-color: #f2f2f2;
+}
+
+.at-border-light {
+    border-color:#ddd;
+}
+
+a {
+    color:@main_color;
+    &:hover {
+        color:@main_color * 0.8;
+    }
+}
+
+.at-a-primary a {
+    color:@main_color;
+    &:hover {
+        color:@main_color * 0.8;
+    }
+}
+
+.at-a-normal a{
+    color: #555;
+    &:hover {
+        color: @main_color;
+    }
+}
+
+.at-small-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 5px;
+    i {
+        color:inherit!important;
+    }
+}
+
+.at-table-border-light {
+    tr td {
+        border: 1px solid #ddd;
+    }
+}
+
+.at-header {
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.1);
+    background-color: #fff;
+
+    h1 {color:@main_color;}
+
+    a {
+        color:#333;
+    }
+
+    .at-nav {
+        a {
+            &:hover, &.active {
+                border-bottom-color:@main_color;
+                color: @main_color;
+            }
+        }
+    }
+
+    .at-cloud-logo {
+        h1 {
+            background:url('../../assets/logo.png') left top no-repeat;
+        }
+    }
+
+    .at-user-logo {
+        background-color:@main_color;
+        color: #fff;
+    }
+
+    .at-arrow {
+        border-color: @main_color;
+    }
+}
+
+.at-user-menu {
+
+    li {            
+        
+        &:hover {
+            color: @main_color;
+        }
+    }
+}
+
+.at-side {
+    
+    // background-color:#fff;
+    // box-shadow: 0 2px 5px 1px rgba(0,0,0,.1);
+
+    a {
+        // color: #555;
+        &:hover {
+            color:@main_color;
+        }
+    }
+}
+
+.at-card-wrapper {
+
+    background-color:#fff;
+    
+    >div:first-child{
+        padding:0;
+    }
+    
+    .at-card-content {
+        border-radius: inherit;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+}
+
+
+.at-box-select {
+    border: 1px solid transparent!important;
+}
+.at-box-select:hover, .at-box-selected{
+    border:1px solid @main_color!important;
+}
+.at-box-select::before, .at-box-selected::before {
+
+}
+.at-box-selected::before {
+    content:'';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: inherit;
+    right:0;
+    top: 0;
+    background-color:@main_color;
+    z-index: 99;
+    color:#fff;
+    background: @main_color * 1.2 url('../../assets/selected.svg') center center no-repeat;
+    background-size: 70% auto;
+}
+
+.at-dataset-list {
+    li {
+        // background-color:#fff;
+      >div:nth-child(1) {
+        background-color:#fff;
+      }  
+    }
+    li:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+// 创建空白按钮
+.at-create-blank {
+    >div:first-child {
+  
+    }
+}
+
+// 上传区域
+.at-upload-area {
+    border: 1px dashed #888;
+    background-color: #fff;
+
+    i {
+        color: #ddd;
+    }
+}
+
+.at-pop-menu {
+    width: 180px;
+    padding: 8px;
+    ul li {
+        height: 32px;
+        line-height: 32px;
+        text-indent: 5px;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {background-color: rgba(0,0,0,.05);}
+    }
+}
+
+// 复写
+.bp3-button.bp3-intent-primary {
+    background-color:@main_color;
+    color: #fff;
+
+    &:hover {
+        background-color:@main_color * .9; 
+    }
+}
+
+// 地图编辑页面
+.at-map-editor{
+    .at-me-setbar {
+        color:#ABABAB;
+        a {
+            color:inherit;
+        }
+        background-color:#2C2C2C;
+
+        a, div[class*=btn]{
+            &:hover {
+                color:#fff;
+            }
+        }
+    }
+    .at-me-pane {
+        background-color:#F4F7FB;
+        box-shadow: 0 0 10px 2px rgba(31,51,73,.1)!important;
+    }
+    
+}
+
+// 分页
+.rc-pagination-item-active {
+    border: 1px solid #176CF0;
+    background-color: #176CF0;
+}

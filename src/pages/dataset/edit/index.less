@@ -1,0 +1,74 @@
+@paneWidth: 320px;
+
+.main {
+    overflow: hidden;
+
+    >div {
+        position: absolute;
+    }
+}
+
+.tools {
+    position: absolute;
+    top: 10px;
+    left: @paneWidth + 10px;
+    z-index: 999;
+}
+
+.pane {
+    left: 0;
+    top:0;
+    width: @paneWidth;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: calc(100% - 20px);
+
+    > div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .paneHead {
+        >div{
+            height: 40px;
+            float: left;
+            margin:0;
+            padding:0;
+        }
+        >div:first-child {
+            width: 50px;
+        }
+        >div:last-child{
+            width: calc(100% - 50px);
+            i {margin-right: 10px;}
+        }
+        .editText {
+            width: calc(100% - 30px);
+            height: 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
+.btns {
+    padding-bottom: 6px;
+}
+
+.map {
+    left: @paneWidth;
+    top: 0;
+    width: calc(100% - @paneWidth);
+    height: calc(100% - 20px);
+}
+
+.infos {
+    height:20px;
+    line-height: 20px;
+    background-color:rgb(5, 90, 160);
+    position: absolute;
+    bottom:0;
+    // width:calc(100% - @paneWidth);
+    width:100%;
+    left: 0;
+}
+

@@ -1,0 +1,54 @@
+.filterPanel {
+    padding: 10px 0;
+    > div:first-child {
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        button[class*=small] {padding: 0 4px;margin-left: 5px;}
+        input {width: 80px;}
+    }
+
+    > div:last-child {
+        padding: 10px 5px 5px 5px;
+        ul > li:not(:last-child) {
+            margin-bottom:10px;
+        }
+    }
+}
+
+.filterItem {
+    >div:first-child {
+        display: flex;
+        padding: 5px 0;
+        justify-content: space-between;
+        button[class*=small] {padding: 0 4px;margin-left: 5px;}  
+        h6 {
+            max-width: 170px;
+            i {
+                margin-right: 5px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .expSpan {
+        background-color:rgba(0,0,0,.1);
+        box-shadow: 0 0 0 1px rgba(0,0,0,.3);
+        display: inline-block;
+        padding: 2px 4px;
+        border-radius: 2px;
+    }
+}
+
+.fieldWrapper {
+    height: 380px;
+    width: 520px;
+    padding: 10px 5px 5px 5px;
+   
+}
+
+.blankCreate {
+    padding:10px;
+    transform: scale(.8);
+}

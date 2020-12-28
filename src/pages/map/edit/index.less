@@ -1,0 +1,59 @@
+@setBarWidth: 60px;
+// @siderWidth: 320px;
+
+.container {
+    position: relative;
+    overflow: hidden;
+    background-color:#fff;
+
+    >div:first-child {
+        height: calc(100% - 20px);
+        >div {
+            float: left;
+        }
+    }
+
+    >div:last-child{
+        height: 20px;
+        overflow: hidden;
+    }
+
+}
+.setBar {
+    width:@setBarWidth;
+    min-width: @setBarWidth;
+}
+
+
+.main {
+    height: 100%;
+}
+.map {
+    width:100%;
+    height:calc(100% - 20px);
+}
+
+.search {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    min-width: 280px;
+    min-height: 30px;
+}
+
+.infos {
+    height:20px;
+    line-height: 20px;
+    background-color:rgb(5, 90, 160);
+    position: absolute;
+    // width:calc(100% - @paneWidth);
+    width:100%;
+    z-index: 9;
+}
+
+.toolbar {
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    z-index: 9;
+}

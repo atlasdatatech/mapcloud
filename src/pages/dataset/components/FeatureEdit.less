@@ -1,0 +1,83 @@
+.featureHeader {
+    >div{
+        height: 40px;
+        float: left;
+        margin:0;
+        padding:0;
+    }  
+    >div:first-child {
+        width: calc(100% - 100px);
+    }
+    >div:last-child{
+        width: 100px;
+        justify-content:flex-end;
+    }
+}
+
+.featureInfo {
+    table {
+        width:100%;
+        td {
+            padding: 3px 5px;
+        }
+        tr:nth-child(odd) {
+            font-weight:600;
+        }
+        tr:nth-child(even) td {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+// 属性表单编辑样式
+.formEditorPane {
+    overflow: hidden;
+    padding-right: 10px;
+
+    li {
+        padding: 5px 5px 0 5px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        input[type='text'] {
+            width: calc((100% - 40px) / 2 - 8px);
+        }
+    }
+
+    .addBtn {
+        padding: 5px;
+        button {
+            width:100%;
+            padding: 8px 0;
+        }
+    }
+
+    .blankNote {
+        text-align: left;
+        line-height: 150%;
+        font-size: 12px;
+        padding: 20px;
+    }
+}
+.editor {
+    padding: 10px;
+}
+.tabs {
+    height: calc(100% - 270px);
+}
+.tab {
+    height: calc(100% - 80px);
+    // padding: 0 0 0 10px;
+    margin-top: 10px;
+}
+// 面板滚动条高度
+.paneScroll {
+    // max-height: calc(100% - 240px - 50px);
+    max-height: 100%;
+    margin-right: -10px;
+}
+
+.code {
+    height: calc(100% - 90px);
+}

@@ -1,0 +1,36 @@
+@hoverColor:#137CBD;
+.tree {
+    li {
+        cursor: pointer;
+        user-select: none;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+
+        >div:first-child {
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        >div:first-child > i {
+            margin-left: -16px;
+        }
+    }
+
+    [class*=before] {
+        // border-top-color:  @hoverColor;
+        border-bottom: 1px solid @hoverColor!important;
+    }
+
+    [class*=inner] {
+        box-shadow: 0 0 0 1px @hoverColor!important;
+    }
+
+    [class*=after] {
+        // border-bottom-color:  @hoverColor;
+        border-top: 1px solid @hoverColor!important;
+    }
+
+    button {
+        transform: scale(0.9);
+    }
+}
